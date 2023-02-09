@@ -15,6 +15,17 @@
     "lint:style": "stylelint \"./**/*.{css,less,vue,html}\" --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md,less}\""
   },
+  "lint-staged": {
+    "./**/*.{js,ts,jsx,tsx,vue}": [
+      "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
+    ],
+    "./**/*.{css,less,vue,html}": [
+      "stylelint \"./**/*.{css,less,vue,html}\" --fix"
+    ],
+    "./**/*.{html,vue,ts,js,json,md,less}": [
+      "prettier --write \"./**/*.{html,vue,ts,js,json,md,less}\""
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -29,6 +40,7 @@
     "eslint-plugin-vue": "^9.9.0",
     "husky": "^8.0.3",
     "less": "^4.1.3",
+    "lint-staged": "^13.1.1",
     "postcss": "^8.4.21",
     "postcss-html": "^1.5.0",
     "postcss-less": "^6.0.0",
