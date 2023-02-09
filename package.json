@@ -14,7 +14,6 @@
     "docs:serve": "pnpm run --filter docs serve",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md,less}\""
-
   },
   "keywords": [],
   "author": "",
