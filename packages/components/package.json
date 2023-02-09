@@ -1,16 +1,20 @@
 {
   "name": "star8080-ui",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "vite build",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
+  "files": [
+    "es",
+    "lib"
+  ],
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
     "@star8080-ui/utils": "workspace:^1.0.0"

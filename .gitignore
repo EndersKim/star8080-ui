@@ -3,5 +3,5 @@ node_modules
 **/lib
 coverage
 *.log
-examples/dist
 **/cache
+star8080-ui
