@@ -1,21 +1,8 @@
 <template>
   <div>
-    <Icon name="edit" />
-    <Icon name="download" />
-    <Icon name="forward" />
-    <Icon name="history" />
-    <Icon name="file" />
-    <Icon name="link" />
-    <Icon name="good" />
+    <Link href="https://juejin.cn/post/7121381989864701982">link</Link>
   </div>
 </template>
 <script lang="ts" setup>
-  import { Icon } from 'star8080-ui'
+  import { Link } from 'star8080-ui'
 </script>
-<style lang="less">
-  .icon {
-    margin-right: 20px;
-    font-size: 36px;
-    color: #666;
-  }
-</style>
