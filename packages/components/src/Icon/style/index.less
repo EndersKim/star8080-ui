@@ -1,0 +1,40 @@
+@import url('../../../common/index.less');
+
+.icon {
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  fill: currentcolor;
+}
+
+.@{prefix}-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: -0.15em;
+
+  .@{prefix}-info {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    padding: 0 3px;
+    min-width: 16px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #ee0a24;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.2;
+    transform: translate(50%, -50%);
+  }
+
+  .@{prefix}-dot {
+    width: 8px;
+    min-width: 0;
+    height: 8px;
+    background-color: #ee0a24;
+    border-radius: 100%;
+  }
+}
