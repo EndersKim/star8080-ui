@@ -6,8 +6,9 @@
   "scripts": {
     "prepare": "husky install",
     "play:dev": "pnpm run --filter playground dev",
-    "build:star": "gulp -f packages/components/script/build/gulpfile.ts",
-    "format:star": "prettier",
+    "star:coverage": "pnpm run --filter star8080-ui coverage",
+    "star:test": "pnpm run --filter star8080-ui test",
+    "star:build": "gulp -f packages/components/script/build/gulpfile.ts",
     "docs:dev": "pnpm run --filter docs dev",
     "docs:build": "pnpm run --filter docs build",
     "docs:serve": "pnpm run --filter docs serve",
@@ -34,10 +35,13 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vitest/coverage-c8": "^0.28.4",
+    "@vue/test-utils": "^2.2.10",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.9.0",
+    "happy-dom": "^8.2.6",
     "husky": "^8.0.3",
     "less": "^4.1.3",
     "lint-staged": "^13.1.1",
@@ -54,7 +58,9 @@
     "stylelint-order": "^6.0.1",
     "typescript": "^4.9.5",
     "vite": "^4.1.1",
+    "vite-plugin-dts": "^1.7.2",
     "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^0.28.4",
     "vue": "^3.2.36"
   }
 }
