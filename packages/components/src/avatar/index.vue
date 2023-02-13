@@ -1,13 +1,9 @@
 <template>
   <div v-bind="attrs" class="star-avatar" :class="styleClass">
-    <img
-      :src="$props.src"
-      v-if="$props.src && !imgError"
-      @error="imgError = true"
-    />
+    <img :src="src" v-if="src && !imgError" @error="imgError = true" />
 
-    <div class="text-box" v-else-if="$props.name">
-      <p>{{ $props.name.slice(0, 1) }}</p>
+    <div class="text-box" v-else-if="name">
+      <p>{{ name.slice(0, 1) }}</p>
     </div>
 
     <svg
