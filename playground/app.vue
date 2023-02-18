@@ -2,6 +2,28 @@
   <div>
     <Link href="https://juejin.cn/post/7121381989864701982">link</Link>
 
+    <h3>分页：现在是第 {{ page }} 页</h3>
+
+    <Pagination v-model="page" :max="5"></Pagination>
+
+    <h3>很多页的分页：现在是第 {{ page2 }} 页</h3>
+
+    <Pagination v-model="page2" :max="100"></Pagination>
+
+    <h3>折叠面板</h3>
+
+    <Collapse v-model="open_collapse">
+      <template #title>点击展开/收起</template>
+      <div>这是折叠的内容</div>
+    </Collapse>
+
+    <h3>初始打开的折叠面板</h3>
+
+    <Collapse v-model="open_collapse2">
+      <template #title>点击展开/收起</template>
+      <div>这是折叠的内容</div>
+    </Collapse>
+
     <h3>文字提示</h3>
 
     <Tooltip tip="文字提示">
@@ -49,5 +71,20 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { Link, Avatar, Badge, Tooltip } from 'star8080-ui'
+  import {
+    Link,
+    Avatar,
+    Badge,
+    Tooltip,
+    Collapse,
+    Pagination,
+  } from 'star8080-ui'
+
+  import { ref } from 'vue'
+
+  const open_collapse = ref(false)
+  const open_collapse2 = ref(true)
+
+  const page = ref(1)
+  const page2 = ref(1)
 </script>
