@@ -108,7 +108,7 @@
       p {
         font-size: 20px;
         font-weight: bold;
-        color: #fff;
+        color: #fff !important;
       }
     }
   }
