@@ -6,7 +6,22 @@ import { default as Badge } from './badge'
 import { default as Tooltip } from './tooltip'
 import { default as Collapse } from './collapse'
 import { default as Pagination } from './pagination'
-export { Button, Icon, Link, Avatar, Badge, Tooltip, Collapse, Pagination }
+import { default as AsideNav } from './aside-nav'
+import { default as Dialog } from './dialog'
+import { default as Input } from './Input'
+export {
+  Button,
+  Icon,
+  Link,
+  Avatar,
+  Badge,
+  Tooltip,
+  Collapse,
+  Pagination,
+  AsideNav,
+  Dialog,
+  Input,
+}
 export default [
   Button,
   Icon,
@@ -16,4 +31,7 @@ export default [
   Tooltip,
   Collapse,
   Pagination,
+  AsideNav,
+  Dialog,
+  Input,
 ]

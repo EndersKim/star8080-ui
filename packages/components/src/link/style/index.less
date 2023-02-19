@@ -13,35 +13,34 @@
   vertical-align: middle;
   cursor: pointer;
   font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
 }
 
 .@{prefix}-link--primary {
   color: #409eff;
 }
 
-.@{prefix}-link--primary:hover {
-  color: #66b1ff;
+.@{prefix}-link--success {
+  color: #67c23a;
 }
 
-.@{prefix}-link.is-disabled {
-  cursor: not-allowed;
+.@{prefix}-link--info {
+  color: #b9b9b9;
 }
 
-.@{prefix}-link.is-disabled:hover {
-  cursor: not-allowed;
-  color: #a0cfff;
+.@{prefix}-link--warning {
+  color: #e6a23c;
 }
 
-.@{prefix}-link--primary.is-disabled {
-  color: #a0cfff;
-}
-
-.@{prefix}-link.is-underline:hover::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 0;
-  content: '';
-  border-bottom: 1px solid #409eff;
+.@{prefix}-link--danger {
+  color: #f56c6c;
 }
