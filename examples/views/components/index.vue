@@ -31,10 +31,10 @@
     {
       title: '表单组件',
       children: [
-        { title: '输入框-', link: '/components/input' },
-        { title: '数字输入框-', link: '/components/input-num' },
-        { title: '单选框-', link: '/components/radio' },
-        { title: '选择器-', link: '/components/select' },
+        { title: '输入框', link: '/components/input' },
+        // { title: '数字输入框-', link: '/components/input-num' },
+        { title: '单选框', link: '/components/radio' },
+        { title: '选择器', link: '/components/select' },
         // { title: '日期和时间选择器', link: '/components/icon' },
       ],
     },

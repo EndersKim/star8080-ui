@@ -8,7 +8,9 @@ import { default as Collapse } from './collapse'
 import { default as Pagination } from './pagination'
 import { default as AsideNav } from './aside-nav'
 import { default as Dialog } from './dialog'
-import { default as Input } from './Input'
+import { default as Input } from './input'
+import { default as Radio } from './radio'
+import { default as Select } from './select'
 export {
   Button,
   Icon,
@@ -21,6 +23,8 @@ export {
   AsideNav,
   Dialog,
   Input,
+  Radio,
+  Select,
 }
 export default [
   Button,
@@ -34,4 +38,6 @@ export default [
   AsideNav,
   Dialog,
   Input,
+  Radio,
+  Select,
 ]

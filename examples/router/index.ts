@@ -75,6 +75,14 @@ const router = createRouter({
           path: '/components/badge',
           component: () => import('../views/components/badge.vue'),
         },
+        {
+          path: '/components/radio',
+          component: () => import('../views/components/radio.vue'),
+        },
+        {
+          path: '/components/select',
+          component: () => import('../views/components/select.vue'),
+        },
       ],
     },
     {
