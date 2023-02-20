@@ -1,0 +1,1 @@
+import{_ as t,o as s,c,a as e}from"./index-40a23a51.js";const o={},a=e("h1",null,"暗色模式",-1),n=e("p",null," Star UI 支持暗色模式，在 html 中加入名为 dark 的 class 即可将页面设置为暗色模式。 ",-1),r=[a,n];function _(l,d){return s(),c("div",null,r)}const f=t(o,[["render",_]]);export{f as default};

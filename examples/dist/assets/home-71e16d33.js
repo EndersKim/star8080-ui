@@ -1,0 +1,1 @@
+import{_ as t,o,c as s,a as e}from"./index-40a23a51.js";const c={},n=e("h1",null,"组件文档",-1),_=e("p",null,"Star UI 提供了丰富的组件，此文档介绍了 Star UI 各个组件的用法。",-1),a=e("p",null,"在左侧菜单中选择组件进行查看。",-1),r=[n,_,a];function l(d,i){return o(),s("div",null,r)}const u=t(c,[["render",l]]);export{u as default};
