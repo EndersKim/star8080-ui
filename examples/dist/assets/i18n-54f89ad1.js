@@ -1,0 +1,1 @@
+import{_ as t,o as n,c as o,a as e}from"./index-40a23a51.js";const c={},s=e("h1",null,"国际化",-1),a=e("p",null," 通过修改 html 元素的 lang 属性来修改 Star UI 的语言。Star UI 的默认语言为简体中文。 ",-1),_=[s,a];function r(l,d){return n(),o("div",null,_)}const f=t(c,[["render",r]]);export{f as default};

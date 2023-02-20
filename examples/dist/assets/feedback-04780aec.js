@@ -1,0 +1,1 @@
+import{_ as s,o as t,c,a as e}from"./index-40a23a51.js";const o={},n=e("h1",null,"提交反馈",-1),_=e("p",null,"前往 Star UI 仓库的 Issue 页面来提交反馈。",-1),a=[n,_];function r(l,d){return t(),c("div",null,a)}const i=s(o,[["render",r]]);export{i as default};

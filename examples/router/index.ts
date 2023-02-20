@@ -15,7 +15,34 @@ const router = createRouter({
       component: () => import('../views/guide/index.vue'),
       children: [
         { path: '/guide', component: () => import('../views/guide/home.vue') },
-        // { path: '/guide/button', component: () => import('../views/components/button.vue'), }
+        {
+          path: '/guide/install',
+          component: () => import('../views/guide/install.vue'),
+        },
+        {
+          path: '/guide/start',
+          component: () => import('../views/guide/start.vue'),
+        },
+        {
+          path: '/guide/theme',
+          component: () => import('../views/guide/theme.vue'),
+        },
+        {
+          path: '/guide/dark',
+          component: () => import('../views/guide/dark.vue'),
+        },
+        {
+          path: '/guide/i18n',
+          component: () => import('../views/guide/i18n.vue'),
+        },
+        {
+          path: '/guide/feedback',
+          component: () => import('../views/guide/feedback.vue'),
+        },
+        {
+          path: '/guide/contribute',
+          component: () => import('../views/guide/contribute.vue'),
+        },
       ],
     },
     {

@@ -1,0 +1,1 @@
+import{_ as e,o as n,c as s,a as t,t as o}from"./index-40a23a51.js";const c={},l=t("h1",null,"安装",-1),a=t("p",null,"使用npm进行安装：",-1),_=t("pre",null,[t("code",null,o("npm install star8080-ui"))],-1),r=[l,a,_];function i(d,p){return n(),s("div",null,r)}const f=e(c,[["render",i]]);export{f as default};

@@ -1,15 +1,16 @@
 <template>
   <div>
-    <h1>使用指南</h1>
-    <p>本文介绍了 Star UI 的详细用法。</p>
+    <h1>安装</h1>
+    <p>使用npm进行安装：</p>
+    <pre><code>{{ `npm install star8080-ui` }}</code></pre>
     <!-- <div class="article_nav">
       <div class="prev">
         <span class="article_nav_tag">上一篇</span>
-        <span class="article_nav_title">/</span>
+        <span class="article_nav_title">使用指南</span>
       </div>
       <div class="next">
         <span class="article_nav_tag">下一篇</span>
-        <span class="article_nav_title">安装</span>
+        <span class="article_nav_title">快速开始</span>
       </div>
     </div> -->
   </div>

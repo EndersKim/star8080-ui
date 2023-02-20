@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as s,a as o}from"./index-40a23a51.js";const c={},r=o("h1",null,"主题色",-1),n=o("p",null,"Star UI 使用了全局 CSS 变量 --star-primary-color 作为主题色。",-1),_=o("p",null,"默认的主题色为 #09F。",-1),a=o("p",null,"用户可以通过修改 CSS 变量 --star-primary-color 的值来修改主题色。",-1),l=[r,n,_,a];function i(d,p){return e(),s("div",null,l)}const u=t(c,[["render",i]]);export{u as default};
