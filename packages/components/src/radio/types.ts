@@ -1,11 +1,27 @@
-import { ExtractPropTypes } from 'vue'
+import { ExtractPropTypes } from "vue";
 
-export const Props = {
-  // 输入值
-  modelValue: String,
+// size 属性类型
+export const RadioSize = ['midium', 'small', 'mini'];
 
-  // 选项
-  options: Object,
+export const radioProps = {
+    // 绑定值
+    value: String,
+    // 绑定值的数据 
+    label: [String, Number, Boolean],
+    disabled: Boolean,
+    border: Boolean,
+    size: {
+        type: String,
+        // 限制size属性，对RadioSize内不包括的属性直接过滤
+        validator(value: string) {
+            return RadioSize.includes(value)
+        }
+    },
+    // 绑定值
+    modelValue: {
+        type: [String, Number, Boolean],
+        default: '',
+    },
 }
 
-export type Props = ExtractPropTypes<typeof Props>
+export type radioProps = ExtractPropTypes<typeof radioProps>
