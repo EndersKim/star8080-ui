@@ -11,6 +11,7 @@ import { default as Dialog } from './dialog'
 import { default as Input } from './input'
 import { default as Radio } from './radio'
 import { default as Select } from './select'
+import { default as Switch } from './switch'
 export {
   Button,
   Icon,
@@ -25,6 +26,7 @@ export {
   Input,
   Radio,
   Select,
+  Switch,
 }
 export default [
   Button,
@@ -40,4 +42,5 @@ export default [
   Input,
   Radio,
   Select,
+  Switch,
 ]
