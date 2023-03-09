@@ -1,4 +1,6 @@
-.star-radio{
+@import url('../../common/commonStyle/index.less');
+
+.@{prefix}-radio{
   position: relative;
   display: inline-block;
   padding: 4px 6px;
@@ -11,7 +13,7 @@
   line-height: 1;
   cursor: pointer;
 
-  .star-radio-input{
+  .@{prefix}-radio-input{
     position: relative;
     display: inline-block;
     white-space: nowrap;
@@ -20,7 +22,7 @@
     line-height: 1;
     vertical-align: middle;
 
-    .star-radio-inner{
+    .@{prefix}-radio-inner{
       position: relative;
       display: inline-block;
       width: 14px;
@@ -45,7 +47,7 @@
       }
     }
 
-    .star-radio-original{
+    .@{prefix}-radio-original{
       position: absolute;
       top: 0;
       right: 0;
@@ -58,17 +60,17 @@
     }
   }
 
-  .star-radio-label{
+  .@{prefix}-radio-label{
     padding-left: 10px;
     font-size: 14px;
   }
 }
 // 选中的样式
-.star-radio.is-checked{
-  .star-radio-input{
-    .star-radio-inner{
-      background-color: #409eff;
-      border-color: #409eff;
+.@{prefix}-radio.is-checked{
+  .@{prefix}-radio-input{
+    .@{prefix}-radio-inner{
+      background-color: #colors[primary];
+      border-color: #colors[primary];
 
       &::after{
         transform: translate(-50%,-50%) scale(1);
@@ -76,30 +78,54 @@
     }
   }
 
-  .star-radio-label{
-    color:#409eff;
+  .@{prefix}-radio-label{
+    color:#colors[primary];
   }
 }
 
+.@{prefix}-radio.is-disabled,
+.@{prefix}-radio.is-disabled:active,
+.@{prefix}-radio.is-disabled:focus,
+.@{prefix}-radio.is-disabled:hover {
+  color: rgb(179 181 184 / 70%);
+  cursor: not-allowed;
+  .@{prefix}-radio-input{//提高选择器权重
+    .@{prefix}-radio-inner,
+    .@{prefix}-radio-inner:active,
+    .@{prefix}-radio-inner:focus,
+    .@{prefix}-radio-inner:hover {
+      color: #fff;
+      background-color: rgb(223 226 230 / 70%);
+      border-color: rgb(223 226 230 / 70%);
+    }
+  }
+
+  .@{prefix}-radio-label,
+  .@{prefix}-radio-label:active,
+  .@{prefix}-radio-label:focus,
+  .@{prefix}-radio-label:hover {
+    color: rgb(179 181 184 / 100%);
+  }
+}
 
 // 大小
-.star-radio-medium {
-  padding: 6px 10px;
+.@{prefix}-radio-midium {
+  padding: 8px 10px;
   font-size: 16px;
 }
 
-.star-radio-small {
-  padding: 3px 5px;
+.@{prefix}-radio-small {
+  padding: 4px 5px;
   font-size: 12px;
 }
 
-.star-radio-mini {
-  padding: 2px 4px;
+.@{prefix}-radio-mini {
+  padding: 3px 4px;
   font-size: 10px;
 }
 
 // 边框
 .is-border{
   border: 1px #409eff solid;
-  border-radius: 5px;
+  border-radius: 6px;
 }
