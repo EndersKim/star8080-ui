@@ -68,6 +68,9 @@
     <Avatar name="俞涛"></Avatar>
     <h3>默认头像</h3>
     <Avatar></Avatar>
+
+    <br />
+    <Switch v-model="test" mimicry disabled />
   </div>
 </template>
 <script lang="ts" setup>
@@ -78,6 +81,7 @@
     Tooltip,
     Collapse,
     Pagination,
+    Switch,
   } from 'star8080-ui'
 
   import { ref } from 'vue'
@@ -87,4 +91,6 @@
 
   const page = ref(1)
   const page2 = ref(1)
+
+  let test = ref(true)
 </script>
