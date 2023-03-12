@@ -12,6 +12,7 @@ import { default as Input } from './input'
 import { default as Radio } from './radio'
 import { default as Select } from './select'
 import { default as Switch } from './switch'
+import { default as Waterfall } from './waterfall'
 export {
   Button,
   Icon,
@@ -27,6 +28,7 @@ export {
   Radio,
   Select,
   Switch,
+  Waterfall,
 }
 export default [
   Button,
@@ -43,4 +45,5 @@ export default [
   Radio,
   Select,
   Switch,
+  Waterfall,
 ]

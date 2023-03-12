@@ -70,7 +70,8 @@
     <Avatar></Avatar>
 
     <br />
-    <Switch v-model="test" mimicry disabled />
+    <Switch v-model="test" mimicry />
+    <Waterfall value="star"></Waterfall>
   </div>
 </template>
 <script lang="ts" setup>
@@ -82,6 +83,7 @@
     Collapse,
     Pagination,
     Switch,
+    Waterfall,
   } from 'star8080-ui'
 
   import { ref } from 'vue'
