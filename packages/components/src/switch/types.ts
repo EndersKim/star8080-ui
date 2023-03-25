@@ -1,30 +1,29 @@
 import { ExtractPropTypes } from 'vue'
 
-export const switchType = []
-
-export const switchSize = []
+// size 属性类型
+export const SwitchSize = ['midium', 'small', 'mini']
 
 export const switchProps = {
   disabled: Boolean,
-  mimicry: Boolean,
-  // 选中颜色
-  activeColor: {
+  size: {
     type: String,
-    default: '#409eff',
-  },
-  // 未选中颜色
-  inactiveColor: {
-    type: String,
-    default: '#dcdfe6',
-  },
-  // 开关回调
-  onChange: {
-    type: Function,
+    // 限制size属性，对RadioSize内不包括的属性直接过滤
+    validator(value: string) {
+      return SwitchSize.includes(value)
+    },
+    default: 'mini',
   },
   // 绑定值
   modelValue: {
-    type: [Boolean],
-    default: '',
+    type: Boolean,
+    default: false,
+  },
+
+  onChange: {
+    type: Function,
+    default: () => {
+      return 666
+    },
   },
 }
 
