@@ -11,7 +11,7 @@
   import { defineComponent, computed, onMounted } from 'vue'
   import { iconProps } from './types'
   export default defineComponent({
-    name: 'k-icon',
+    name: 'star-icon',
     props: iconProps,
     setup(props) {
       onMounted(() => {
