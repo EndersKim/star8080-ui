@@ -19,20 +19,21 @@
     name: 'star-waterfall',
     props: waterfallProps,
     setup(props) {
-      let baseURL = ref(null)
+      let canvas = ref()
+      let baseURL = ref('')
       onMounted(() => {
-        let canvas = document.getElementById('canvas')!
         console.log(canvas)
-        let ctx = canvas.getContext('2d')
+        let ctx: any = canvas.value.getContext('2d')
         ctx.font = `${props.fontSize}px`
         ctx.fillStyle = props.color
         ctx.rotate((props.rotate * Math.PI) / 180)
         ctx.fillText(props.value, 30, 40)
 
-        baseURL.value = canvas.toDataURL('image/png')
+        baseURL.value = canvas.value.toDataURL('image/png')
       })
       return {
         baseURL,
+        canvas,
       }
     },
   })
