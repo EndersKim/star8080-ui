@@ -13,6 +13,8 @@ import { default as Radio } from './radio'
 import { default as Select } from './select'
 import { default as Switch } from './switch'
 import { default as Waterfall } from './waterfall'
+import { default as Scrollbar } from './scrollbar'
+import { default as Casader } from './casader'
 export {
   Button,
   Icon,
@@ -29,6 +31,8 @@ export {
   Select,
   Switch,
   Waterfall,
+  Scrollbar,
+  Casader,
 }
 export default [
   Button,
@@ -46,4 +50,6 @@ export default [
   Select,
   Switch,
   Waterfall,
+  Scrollbar,
+  Casader,
 ]
