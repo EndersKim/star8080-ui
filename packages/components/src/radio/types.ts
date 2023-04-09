@@ -22,6 +22,12 @@ export const radioProps = {
     type: [String, Number, Boolean],
     default: '',
   },
+  onChange: {
+    type: Function,
+    default: () => {
+      return null
+    },
+  },
 }
 
 export type radioProps = ExtractPropTypes<typeof radioProps>

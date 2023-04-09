@@ -55,6 +55,8 @@
       // 当单选框值改变时，触发该函数回调
       function handleChange() {
         // 提交label值到该组件双向绑定的value上
+        let callback = props.onChange!
+        callback()
         nextTick(() => context.emit('update:modelValue', label))
       }
 

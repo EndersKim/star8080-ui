@@ -1,58 +1,38 @@
 <template>
-  <div
-    class="star-switch"
-    :class="{
-      ...styleClass,
-    }"
-    @click="handleChange"
-  >
-    <span
-      class="star-switch-core"
-      ref="core"
-      :style="{
-        'border-color': modelValue ? activeColor : inactiveColor,
-        'background-color': modelValue ? activeColor : inactiveColor,
-      }"
-    ></span>
-    <!-- 用来接收name -->
-    <!-- <input type="checkbox" class="star-switch-input" :name="name" /> -->
+  <div class="star-switch" :class="{ ...styleClass }" @click="changeValue">
+    <input type="button" class="star-switch-input" :value="modelValue" />
+    <span class="star-switch-core" :class="{ 'is-checked': modelValue }">
+      <div class="star-switch-action"></div>
+    </span>
   </div>
 </template>
 
 <script lang="ts">
   import './style/index.less'
+  import { defineComponent, computed, ref, nextTick } from 'vue'
   import { switchProps } from './types'
-  import { defineComponent, computed, nextTick } from 'vue'
 
   export default defineComponent({
     name: 'star-switch',
     props: switchProps,
-    // components: { Icon },
     setup(props, context) {
       const styleClass = computed(() => {
         return {
           'is-disabled': props.disabled,
-          'is-mimicry': props.mimicry,
-          'is-checked': props.modelValue,
+          [`star-switch-${props.size}`]: props.size,
         }
       })
 
-      // 当单选框值改变时，触发该函数回调
-      function handleChange() {
-        // 更新value
-        if (!props.disabled) {
-          nextTick(() => {
-            context.emit('update:modelValue', !props.modelValue)
-            if (props.onChange) {
-              props.onChange()
-            }
-          })
-        }
+      const changeValue = () => {
+        nextTick(() => {
+          let onChange: any = props.onChange!
+          onChange()
+          context.emit('update:modelValue', !props.modelValue)
+        })
       }
-
       return {
-        handleChange,
         styleClass,
+        changeValue,
       }
     },
   })
